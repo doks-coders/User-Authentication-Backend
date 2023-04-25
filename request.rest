@@ -1,0 +1,119 @@
+#### Register User ####
+
+POST http://localhost:3000/users/register-user
+Content-Type: application/json
+
+{
+    "name":"Friday Ogheneguono",
+    "email" :"friday@gmail.com",
+    "password":"Password1234&",
+    "passwordVerify":"Password1234&",
+    "role":"admin"
+}
+
+#### Login User ####
+
+
+POST http://localhost:3000/users/login-user
+Content-Type: application/json
+
+{
+    "email" :"friday@gmail.com",
+    "password":"Password1234&"
+}
+
+#### Events Testing ####
+
+GET http://localhost:3000/authentication/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyaWRheUBnbWFpbC5jb20iLCJpYXQiOjE2ODIyNTE3OTcsImV4cCI6MTY4MjMzODE5N30.HNcWhbnqZAAk_Ju1y49B9_HxxZ6ofL4XieTns7h4oUs
+Content-Type: application/json
+
+
+
+
+#### Forgot User Password ####
+
+POST http://localhost:3000/users/forgot-password
+Content-Type: application/json
+
+{
+    "email":"guonnie11@gmail.com",
+    "frontend_verify_emailLink":"https://localhost.com/api/"
+}
+
+
+
+#### Verify Forgotten Password ####
+
+GET http://localhost:3000/authentication/forgot-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imd1b25uaWUxMUBnbWFpbC5jb20iLCJpYXQiOjE2ODIxNTMyODUsImV4cCI6MTY4MjIzOTY4NX0.SDMHkebrIabiR5u3t8zff4nvhPYQjTu4DiN44kMtpik
+Content-Type: application/json
+
+
+#### Set Forgotten Password Email ####
+
+POST  http://localhost:3000/authentication/forgot-password-set/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imd1b25uaWUxMUBnbWFpbC5jb20iLCJpYXQiOjE2ODIxNTMyODUsImV4cCI6MTY4MjIzOTY4NX0.SDMHkebrIabiR5u3t8zff4nvhPYQjTu4DiN44kMtpik
+Content-Type: application/json
+
+{
+    "password":"June301999&",
+    "passwordVerify":"June301999&"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Login User ####
+
+POST http://localhost:3000/auth/loginjwt 
+Content-Type: application/json
+
+
+{
+    "email" :"guonnie@gmail.com",
+    "password":"Password1234&"
+}
+
+
+#### JWT View ####
+
+POST http://localhost:3000/auth/user 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGFuaWVsIE9kb2t1bWEiLCJlbWFpbCI6Imd1b25uaWVAZ21haWwuY29tIiwiaWF0IjoxNjgxNTQzNDA3LCJleHAiOjE2ODE2Mjk4MDd9.LIIsNT_8PGZ9raPcT6vkPlayu7umpalETMG-wWNTS9I
+
+
+
+
+
+
+
+
+#### View User ####
+
+GET  http://localhost:3000/user/view-user
+Content-Type: application/json
+Api-Token: mytoken
+Bearer-Token:check
+
+
+
+
+
+
+
+
+
+
+
+
+
