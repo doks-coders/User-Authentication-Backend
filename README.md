@@ -34,7 +34,7 @@ Backend Engineers need to deliver standard endpoints that give front-end develop
 
 ## Data Flow Design
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/procurement-app-10bdf.appspot.com/o/Screenshot_20230425-101614~2.png?alt=media&token=c6507bb9-ac9a-4f1d-86a9-3540020f8892)
 
 
 ## Usage/Examples
