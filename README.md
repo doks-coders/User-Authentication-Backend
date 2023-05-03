@@ -1,6 +1,6 @@
 # Nestjs User Authentication API
 
-The utilization of different application models to create a seamless authentication sequence that encompasses events, error handling standards and unit and component testing
+The utilization of different application models to create a seamless authentication sequence that encompasses events, error handling standards and unit and component testing. Built consumer documentation to display schemas and responses, thus improving implementation efficiency
 ## Documentation
 
 [Swagger Documentation](https://user-authentication-backend-zuim.onrender.com/api)
@@ -34,7 +34,7 @@ Backend Engineers need to deliver standard endpoints that give front-end develop
 
 ## Data Flow Design
 
-![App Screenshot](https://firebasestorage.googleapis.com/v0/b/procurement-app-10bdf.appspot.com/o/Screenshot_20230425-101614~2.png?alt=media&token=c6507bb9-ac9a-4f1d-86a9-3540020f8892)
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/procurement-app-10bdf.appspot.com/o/Screenshot_20230425-194559~2.png?alt=media&token=8690a09b-5707-41b2-ab7e-d023339c8c02)
 
 
 ## Usage/Examples
@@ -59,14 +59,14 @@ body => {
 ```
 
 
-Body Properties | Type |Description
+Body Properties | Type |Required
 --- | --- |---
- `name` | `string`   | **Required**
- `email` | `string`   | **Required**
-`password` | `string`   | **Required**
-`passwordVerify` | `string`   | **Required**
-`role` | `string`   | **Required**
-`frontend_verify_emailLink` | `string`   | **Required**
+ `name` | `string`   | **true**
+ `email` | `string`   | **true**
+`password` | `string`   | **true**
+`passwordVerify` | `string`   | **true**
+`role` | `string`   | **true**
+`frontend_verify_emailLink` | `string`   | **true**
  
  
 
@@ -96,9 +96,9 @@ Unprocessable entity | `422`  | You have an invalid email, invalid password or i
 
 
 ```
-Parameter | Type |Description
+Parameter | Type |Required
 --- | --- |---
-`emailJWT` | `string`   | **Required**
+`emailJWT` | `string`   | **true**
 
 
 ### Success Codes
@@ -129,10 +129,10 @@ body => {
 }
 
 ```
-Body Properties | Type |Description
+Body Properties | Type |Required
 --- | --- |---
-`email` | `string`   | **Required**
-`password` | `string`   | **Required**
+`email` | `string`   | **true**
+`password` | `string`   | **true**
 
 
 ### Success Codes
@@ -165,9 +165,9 @@ body => {
 
 ```
 
-Body Properties | Type |Description
+Body Properties | Type |Required
 --- | --- |---
-`email` | `string`   | **Required**
+`email` | `string`   | **true**
 `frontend_verify_emailLink` | `string`   | **Required**
 
 
@@ -193,9 +193,9 @@ Internal Server Error | `500` | Your verification configuration failed to save
 
 
 ```
-Parameter | Type |Description
+Parameter | Type |Required
 --- | --- |---
- `emailJWT` | `string`   | **Required**
+ `emailJWT` | `string`   | **true**
 
 
 ### Success Codes
@@ -230,9 +230,9 @@ body => {
 
 ```
 
-Body Properties | Type |Description
+Body Properties | Type |Required
 --- | --- |---
- `emailJWT` | `string`   | **Required**
+ `emailJWT` | `string`   | **true**
 
 
 ### Success Codes
