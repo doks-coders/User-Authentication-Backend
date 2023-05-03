@@ -3,7 +3,7 @@
 The utilization of different application models to create a seamless authentication sequence that encompasses events, error handling standards and unit and component testing. Built consumer documentation to display schemas and responses, thus improving implementation efficiency
 ## Documentation
 
-[Swagger Documentation](https://user-authentication-backend-zuim.onrender.com/api)
+[Swagger Documentation](https://user-authentication-backend-production.up.railway.app/api)
 
 
 ## Run Locally
@@ -32,7 +32,7 @@ An efficient system that understands what users will require in order to give th
 Backend Engineers need to deliver standard endpoints that give front-end developers the proper respones which would enable them to design better and more efficient user interfaces
 
 
-## Data Flow Design
+## Process Model
 
 ![App Screenshot](https://firebasestorage.googleapis.com/v0/b/procurement-app-10bdf.appspot.com/o/Screenshot_20230425-194559~2.png?alt=media&token=8690a09b-5707-41b2-ab7e-d023339c8c02)
 
