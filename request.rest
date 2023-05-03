@@ -1,5 +1,20 @@
 #### Register User ####
 
+
+POST https://user-authentication-backend-production.up.railway.app/users/register-user
+Content-Type: application/json
+
+{
+      "name":"Friday Ogheneguono",
+    "email" :"friday@gmail.com",
+    "password":"Password1234&",
+    "passwordVerify":"Password1234&",
+    "role":"admin"
+}
+
+
+###
+
 POST http://localhost:3000/users/register-user
 Content-Type: application/json
 
@@ -13,6 +28,16 @@ Content-Type: application/json
 
 #### Login User ####
 
+
+POST https://user-authentication-backend-production.up.railway.app/users/login-user
+Content-Type: application/json
+
+{
+    "email" :"friday@gmail.com",
+    "password":"Password1234&"
+}
+
+###
 
 POST http://localhost:3000/users/login-user
 Content-Type: application/json
